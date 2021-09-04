@@ -1,0 +1,53 @@
+{
+  "name": "c-vli",
+  "version": "0.2.0",
+  "description": "quickly start a project with an existing template.",
+  "keywords": ["cli", "javascript", "vue", "react", "angular"],
+  "author": "duke",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yalhu/c-vli"
+  },
+  "main": "index.js",
+  "bin": {
+    "vli": "bin/vli"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development rollup --config 'build/rollup.config.js' --configDebug --watch",
+    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
+    "build:wbp": "webpack --config build/webpack.config.js",
+    "babel": "babel src -d output  --config babelrc.js",
+    "prepublish": "npm run build:wbp"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^6.1.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.3.3",
+    "ora": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-async-to-promises": "^0.8.15",
+    "cross-env": "^7.0.3",
+    "electron": "^13.2.1",
+    "rollup": "^2.35.1",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "stream": "^0.0.2",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.2.0"
+  }
+}

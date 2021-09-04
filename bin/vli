@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+process.env.NODE_PATH = __dirname + '/../node_modules'
+
+// 不走build 直接转向main 文件 // 开发调试
+// require('../src/main')
+require('../output/main')
