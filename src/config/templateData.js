@@ -57,6 +57,13 @@ module.exports = {
       tags: 'vue',
       status: 'done'
     },
+    'taro3-sample': { 
+      name: 'taro3-sample',
+      desc: 'taro3 跨端应用，支持小程序，h5。taro打包方式：webpack5',
+      templatePath: 'template-taro3-sample',
+      tags: 'react, taro',
+      status: 'done'
+    },
     // multiple pages
     'vue2-mtp': { 
       name: 'vue2-mtp',

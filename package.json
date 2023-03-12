@@ -1,8 +1,14 @@
 {
   "name": "c-vli",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "quickly start a project with an existing template.",
-  "keywords": ["cli", "javascript", "vue", "react", "angular"],
+  "keywords": [
+    "cli",
+    "javascript",
+    "vue",
+    "react",
+    "angular"
+  ],
   "author": "duke",
   "private": false,
   "repository": {
@@ -48,6 +54,6 @@
     "rollup-plugin-terser": "^7.0.2",
     "stream": "^0.0.2",
     "webpack": "^5.11.0",
-    "webpack-cli": "^4.2.0"
+    "webpack-cli": "^4.10.0"
   }
 }
